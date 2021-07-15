@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+            text-decoration: none;
+        }
+
+        body {
+            background-color: blue;
+            height: (100vh - 30px);
+            /* height:50vh; */
+        }
+
+        /* .container {
+            display: flex;
+        } */
+
+        /* .card {
+            border: 2px solid blue;
+            box-shadow: 100px 100px 100px blue;
+
+        } */
+
+        .navbar {
+            /* display: flex; */
+            position: fixed;
+            width: 100%;
+            /* background-color: rgb(35, 0, 235); */
+        }
+
+        .navbar .logo a {
+            font-size: 35px;
+            font-weight: 500;
+            margin: 10px 0px;
+            color: rgb(0, 0, 0);
+            display: block;
+
+        }
+
+        .max-width {
+            display: flex;
+            height: 600px;
+            margin: 40px 40px 40px 40px;
+            padding: 20px 50px;
+            background-color: rgb(255, 255, 255);
+            font-family: 'Ubuntu', sans-serif;
+            background-image: 300px;
+
+        }
+
+        .navbar .max-width {
+            display: flex;
+            /* align-items: center; */
+            justify-content: space-between;
+            list-style: none;
+        }
+
+        .navbar .nvg li {
+            display: inline-block;
+            margin: 10px 10px;
+
+        }
+
+        .nvg {
+            background: url("Snapchat-211792135-removebg-preview.png") no-repeat center;
+            /* background-color: gray; */
+            /* font-family: 'Ubuntu',sans-serif; */
+            /* color: maroon; */
+        }
+
+        .nvg a.sticky {
+            padding: 20px 20px;
+            color: black;
+            font-weight: 500;
+        }
+
+        .navbar .nvg .active a:hover {
+            border: 2px solid black;
+            background: rgb(231, 226, 226);
+        }
+
+        .navbar .nvg li a:hover {
+            border: 2px solid rgb(0, 0, 0);
+            background: rgb(226, 217, 217);
+            border-radius: 3px;
+            color: rgb(0, 0, 0);
+            padding: 0px 10px;
+            cursor: pointer;
+            /* opacity: 0.5; */
+        }
+
+        .nvg .one {
+            position: absolute;
+            top: 280px;
+            left: 300px;
+            margin: -32px -100px;
+            font-size: 25px;
+            font-weight: 600;
+            font-family: 'Ubuntu', sans-serif;
+            /* padding:12px -30px;  */
+        }
+        .nvg .one span{
+            color:orangered;
+            font-size: 30px;
+        }
+
+        .nvg .two {
+            position: absolute;
+            top: 290px;
+            left: 300px;
+            margin: 0px -100px;
+            font-size: 35px;
+            font-weight: 600;
+            font-family: 'Ubuntu', sans-serif;
+            /* padding:2px -30px;  */
+        }
+        .nvg .three{
+            position: absolute;
+            top: 350px;
+            left: 300px;
+            margin: 0px -100px;
+            font-size: 15px;
+            font-weight: 500;
+            font-family: 'Ubuntu', sans-serif;
+            color: blue;
+            justify-content: center;
+            /* padding:2px -30px;  */
+        }
+
+        .nvg .two span {
+            color: blue
+        }
+        .nvg .hire{
+            position: absolute;
+            top: 440px;
+            left: 280px;
+            margin: 0px -80px;
+            font-size: 17px;
+            font-weight: 600;
+            border:2px solid blue;
+            color: white;
+            background-color: rgb(0, 0, 255);
+            border-radius: 4px;
+            padding: 3px 25px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .nvg  a:hover{
+            color: blue;
+            background: rgba(0, 0, 255, 0.034);
+        }
+        .nvg .project{
+            position: absolute;
+            top: 440px;
+            left: 330px;
+            margin: 0px 0px;
+            font-size: 17px;
+            font-weight: 600;
+            border:2px solid blue;
+            color: white;
+            background-color: rgb(0, 0, 255);
+            border-radius: 4px;
+            padding: 3px 30px;
+            /* color: black; */
+            font-family: 'Ubuntu', sans-serif;
+        }
+        @media(max-width:852px){
+            .nvg .one {
+            position: absolute;
+            top: 280px;
+            left: 280px;
+            margin: -32px -100px;
+            font-size: 20px;
+            font-weight: 600;
+            font-family: 'Ubuntu', sans-serif;
+            /* padding:12px -30px;  */
+        }
+
+        .nvg .two {
+            position: absolute;
+            top: 290px;
+            left: 280px;
+            margin: 0px -100px;
+            font-size: 30px;
+            font-weight: 600;
+            font-family: 'Ubuntu', sans-serif;
+            /* padding:2px -30px;  */
+        }
+        .nvg .three{
+            position: absolute;
+            top: 350px;
+            left: 280px;
+            margin: 0px -100px;
+            font-size: 10px;
+            font-weight: 500;
+            font-family: 'Ubuntu', sans-serif;
+            color: blue;
+            /* padding:2px -30px;  */
+        }
+        .nvg {
+            background: url("Snapchat-211792135-removebg-preview.png") no-repeat center;
+            /* background-color: gray; */
+            /* font-family: 'Ubuntu',sans-serif; */
+            /* color: maroon; */
+            /* left:200px; */
+        }
+        }        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Logo</a></div>
+            <ul class="nvg">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact us</a></li>
+                <p class="one">Hello, i'm <span> kapil jain </span></p>
+                <p class="two">and I'm a <span>Web Designer</span></p>
+                <p class="three">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br> Illo, pariatur sint id itaque aut sed alias odio assumenda corrupti <br>
+                     eveniet reprehenderit excepturi in repellat obcaecati natus voluptatem, <br>
+                     quibusdam soluta aspernatur!</p>
+                <a href="#" class="hire">Hire me !</a>
+                <a href="#" class="project">Projects</a>
+            </ul>
+        </nav>
+    </div>
+
+</body>
+
+</html>
